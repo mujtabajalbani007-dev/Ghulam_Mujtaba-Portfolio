@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="./images/fav-icon2.png">
+
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+  *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#0f172a;
+color:white;
+
+scroll-behavior:smooth;
+
+}
+
+header{
+
+position:fixed;
+width:100%;
+top:0;
+left:0;
+
+background:rgba(0,0,0,.4);
+
+backdrop-filter:blur(20px);
+
+z-index:1000;
+
+}
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 10%;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#38bdf8;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#38bdf8;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:linear-gradient(135deg,#0f172a,#1e293b);
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+.hero span{
+
+color:#38bdf8;
+
+}
+
+.hero p{
+
+margin:20px auto;
+
+width:70%;
+
+color:#ccc;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#38bdf8;
+
+color:black;
+
+font-weight:bold;
+
+border-radius:40px;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+section{
+
+padding:100px 10%;
+
+}
+
+h2{
+
+text-align:center;
+
+margin-bottom:50px;
+
+font-size:40px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+padding:40px;
+
+border-radius:20px;
+
+backdrop-filter:blur(20px);
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.skill{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.skill:hover{
+
+transform:translateY(-10px);
+
+background:#38bdf8;
+
+color:black;
+
+}
+
+.projects{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.project{
+
+background:#1e293b;
+
+padding:35px;
+
+border-radius:20px;
+
+transition:.4s;
+
+}
+
+.project:hover{
+
+transform:translateY(-12px);
+
+}
+
+form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+input,textarea{
+
+padding:18px;
+
+background:#1e293b;
+
+border:none;
+
+color:white;
+
+border-radius:10px;
+
+}
+
+button{
+
+padding:18px;
+
+background:#38bdf8;
+
+border:none;
+
+cursor:pointer;
+
+font-weight:bold;
+
+border-radius:10px;
+
+}
+
+/* Footer styling */
+.page-footer {
+  margin-top: auto;
+  padding-bottom: 25px;
+	background: #000;
+  color: #fff;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+.footer-container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding: 20px;
+}
+.footer-container .footer > div {
+  width: 240px;
+  margin-right: 20px;
+  margin-left:0;
+}
+
+
+.page-footer h3 {
+  font-size: 1.6em;
+  margin: 5px 0 25px 0;
+  color: #fff;
+  font-weight: 500;
+}
+.page-footer ul {
+  margin-bottom: 25px !important;
+  padding: 0;
+}
+.page-footer li {
+  list-style-type: none;
+  list-style-position: outside;
+  font-size: 1em;
+  margin-bottom: 10px !important;
+  font-weight: 400;	
+
+}
+.page-footer p {
+  font-size: 1em;
+  margin-bottom: 10px !important;
+  line-height: 1.6;
+  
+
+}
+.footer-container .footer {
+  width: 100% !important;
+  display: flex !important;
+  float: none !important;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 100%;
+}
+.page-footer img {
+  margin: 25px 0;
+}
+.page-footer .last img {
+  float:right;
+}
+
+
+.ff_social i {
+    margin-right: 8px;
+    font-size: 1.3em;
+	border:1px solid #fff;
+	border-radius: 6px;
+	padding: 8px;
+	min-width: 21px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: silver;
+}
+
+.footer.content{
+	padding-bottom:25px;
+	padding-top:25px
+}
+@media only screen and (max-width: 780px) {
+  .footer-container .footer > div {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.profile-image{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,.5);
+    transition:.4s ease;
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-image:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 50px rgba(56,189,248,.8);
+}
+.hidden{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+gap:20px;
+
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Portfolio</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="profile-image">
+            <img src="Gemini_Generated_Image_qds547qds547qds5.png" alt="John Doe">
+        </div>
+
+        <h1>Hello, I'm <span>John Doe</span></h1>
+
+        <h2><span id="typing"></span></h2>
+
+        <p>
+            Passionate Developer creating modern web experiences.
+        </p>
+
+        <a href="#projects" class="btn">View Projects</a>
+
+    </div>
+
+</section>
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Doloribus magni voluptate facere inventore.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="grid">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Python</div>
+<div class="skill">Cyber Security</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Project One</h3>
+
+<p>
+
+Modern responsive website.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Project Two</h3>
+
+<p>
+
+Cyber Security Dashboard.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Project Three</h3>
+
+<p>
+
+Portfolio Website.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>Send</button>
+
+</form>
+
+</section>
+
+
+<div class="page-footer">
+<div class="footer-container">
+  <h1>Company Logo</h1>
+    <div class="footer">
+ 		  <div>
+	        <h3>Categories</h3>
+	        <ul>
+	        	<li><a href="#">Clothing</a></li>
+	        	<li><a href="#">Jewelry</a></li>
+				    <li><a href="#">Health & Beauty</a></li>
+				    <li><a href="#">Hair Care</a></li>
+            <li><a href="#">Kitchen Appliances</a></li>
+				
+	        </ul>
+			
+    	</div>
+    	<div>
+			<h3>Connect with us</h3>
+			<ul>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a href="">Careers</a></li>
+				<li><a href="#" target="_blank">Feedback Survey</a></li>
+			</ul>
+			
+			 <div class="ff_social">
+            <a style="color: inherit;" href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a style="color: inherit;" href="" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a style="color: inherit;" href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a style="color: inherit;" href="" target="_blank"><i class="fab fa-instagram"></i></a>
+        	</div>
+
+				
+		</div>
+		<div>
+			<h3>Quick Links</h3>
+			<ul>
+				<li><a href="#"> Catalogue</a></li>
+				<li><a href="#">Brands</a></li>
+				<li><a href="#">Advanced Search</a></li>
+        <li><a href="#">Customer Survey</a></li>
+				<li><a href="#">Trading Terms and Conditions</a></li>
+				<li><a href="#">Website Terms and conditions</a></li>
+				<li><a href="#">Disclaimer</a></li>
+			</ul>		
+	       
+    	</div>
+		<div class="last">
+			 <h3>Customer Support</h3>
+      <p>Available between 8AM to 8PM. Ready to answer your questions.</p>
+      <ul>
+	        	<li><a href="#">Ph: 01234566</a></li>
+	        	<li><a href="#">Email: support@testmail.com</a></li>
+		</div>
+		
+		
+    </div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+<script>
+const words=[
+"Frontend Developer",
+"UI Designer",
+"Cyber Security Enthusiast",
+"Freelancer"
+];
+
+let i=0;
+let j=0;
+let current="";
+let isDeleting=false;
+
+function type(){
+
+current=words[i];
+
+if(!isDeleting){
+
+document.getElementById("typing").textContent=current.substring(0,j++);
+
+if(j>current.length){
+
+isDeleting=true;
+
+setTimeout(type,1000);
+
+return;
+
+}
+
+}
+
+else{
+
+document.getElementById("typing").textContent=current.substring(0,j--);
+
+if(j==0){
+
+isDeleting=false;
+
+i++;
+
+if(i==words.length){
+
+i=0;
+
+}
+
+}
+
+}
+
+setTimeout(type,isDeleting?50:120);
+
+}
+
+type();
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach(sec=>{
+
+sec.classList.add("hidden");
+
+observer.observe(sec);
+
+});
+  </script>
+</html>
