@@ -1,53 +1,25 @@
-Hi, I'm Ghulam Mujtaba 👋
-Junior SOC Analyst | Cybersecurity Enthusiast
-Aspiring cybersecurity professional with hands-on experience in:
+# Ghulam Mujtaba — SOC Analyst Portfolio
 
-Security Monitoring
-Threat Detection
-Incident Response
-Log Analysis
-Network Security
-Threat Hunting
-Digital Forensics
-Technical Skills
-SIEM
-Splunk
-Wazuh
-ELK Stack
-Security Tools
-Wireshark
-Nmap
-Burp Suite
-Sysmon
-Operating Systems
-Linux
-Windows
-Frameworks
-MITRE ATT&CK
-Cyber Kill Chain
-Current Goals
-Security Analyst
-Malware Analysis
-Projects
-Home SOC Lab
-Built a complete SOC lab using:
+This repository contains my portfolio website focused on **Security Operations Center (SOC) analysis** and defensive cybersecurity.
 
-Wazuh
-Windows
-Sysmon
-Kali Linux
-Network Traffic Analysis
-Analyzed malicious traffic using Wireshark.
+## Focus Areas
+- Security monitoring and alert triage
+- Log analysis and threat investigation
+- SIEM fundamentals: Wazuh, Splunk, and ELK Stack
+- Network traffic analysis with Wireshark
+- Sysmon and Windows/Linux security fundamentals
+- Incident response fundamentals
+- MITRE ATT&CK and Cyber Kill Chain
 
-Frontend Developer
-HTML
-CSS
-JavaScript
-Git
-GitHub
-Contact
-Email: mujtabajalbani007@gmail.com
+## Practical Projects
+- **[Wireshark Analysis](https://github.com/mujtabajalbani007-dev/Wireshark-Analysis)** — packet analysis and network traffic investigation practice.
+- **[SOC Lab](https://github.com/mujtabajalbani007-dev/SOC-LAB)** — home lab learning with Wazuh, Windows, Sysmon, and a Linux environment. Documentation is in progress.
 
-LinkedIn: www.linkedin.com/in/ghulam-mujtaba-53289828b
+## Portfolio Website
+Visit the live portfolio: [Ghulam Mujtaba — SOC Analyst](https://mujtabajalbani007-dev.github.io/Ghulam_Mujtaba-Portfolio/)
 
-Portfolio:https://mujtabajalbani007-dev.github.io/Ghulam_Mujtaba-Portfolio
+## Contact
+- Email: mujtabajalbani007@gmail.com
+- LinkedIn: [Ghulam Mujtaba](https://www.linkedin.com/in/ghulam-mujtaba-53289828b/)
+
+*This portfolio highlights current skills and practical learning. Employment history, education, and certifications should be added only when verified and ready to share.*
