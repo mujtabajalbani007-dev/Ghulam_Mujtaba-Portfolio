@@ -1442,6 +1442,7 @@
                 <li><a href="#about"><span class="nav-dot"></span>About</a></li>
                 <li><a href="#skills"><span class="nav-dot"></span>Skills</a></li>
                 <li><a href="#projects"><span class="nav-dot"></span>Projects</a></li>
+                <li><a href="#materials"><span class="nav-dot"></span>Wireshark Materials</a></li>
                 <li><a href="#resume"><span class="nav-dot"></span>Resume</a></li>
                 <li><a href="#contact"><span class="nav-dot"></span>Contact</a></li>
             </ul>
@@ -1564,6 +1565,46 @@
                 <h3>Security Investigation Practice</h3>
                 <p>Continuously developing skills in log review, suspicious-event triage, and mapping findings to MITRE ATT&amp;CK techniques.</p>
                 <span class="project-tag">Log Analysis · Threat Detection</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WIRESHARK PROJECT MATERIALS ===== -->
+    <section id="materials" class="container hidden">
+        <div class="section-header">
+            <span class="section-tag">Project Resources</span>
+            <h2 class="section-title">Wireshark Project Materials</h2>
+            <p class="section-subtitle">A practical guide to reviewing packet captures, documenting suspicious traffic, and presenting network-investigation findings.</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-list-check"></i></div>
+                <h3>Packet Analysis Checklist</h3>
+                <p>Use this workflow when investigating a PCAP or PCAPNG file:</p>
+                <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">
+                    <li>Record capture source, scope, and time range.</li>
+                    <li>Review protocol hierarchy and conversation statistics.</li>
+                    <li>Inspect DNS, HTTP, TLS, and unusual connection patterns.</li>
+                    <li>Filter suspicious IPs, ports, domains, and repeated requests.</li>
+                    <li>Document timestamps, packet references, observations, and limitations.</li>
+                </ul>
+                <span class="project-tag">PCAP · Display Filters · Triage</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-file-waveform"></i></div>
+                <h3>Project Repository</h3>
+                <p>Open the Wireshark analysis repository to review the project files and any packet captures or supporting evidence published there.</p>
+                <span class="project-tag">Files · Captures · Evidence</span>
+                <p style="margin-top: 16px;"><a class="btn btn-sm" href="https://github.com/mujtabajalbani007-dev/Wireshark-Analysis" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>Browse Project Files</span></a></p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>Investigation Report Notes</h3>
+                <p>For each investigation, capture the objective, key indicators, relevant packets and timestamps, analysis steps, conclusion, and recommended follow-up. Avoid sharing sensitive or unredacted traffic data.</p>
+                <span class="project-tag">Findings · IOCs · Reporting</span>
             </div>
         </div>
     </section>
